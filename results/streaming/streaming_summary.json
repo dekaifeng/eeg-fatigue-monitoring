@@ -1,0 +1,29 @@
+{
+  "alarm_active_epochs": 872,
+  "alarm_transitions": 40,
+  "baseline_random_forest_balanced_accuracy": 0.6852953276036904,
+  "continuous_time_claim": false,
+  "data_source": "Figshare DOI 10.6084/m9.figshare.14273687.v3",
+  "epochs": 2022,
+  "fault_demo_states": [
+    "NORMAL",
+    "NORMAL",
+    "DROWSY",
+    "DATA_FAULT",
+    "DATA_FAULT",
+    "NORMAL",
+    "NORMAL"
+  ],
+  "hard_realtime_claim": false,
+  "latency_ms": {
+    "max": 57.553234,
+    "median": 26.247818000000002,
+    "n": 150,
+    "p95": 26.9967346,
+    "p99": 28.02464797999999
+  },
+  "latency_scope": "single epoch PSD/features plus RF predict_proba; excludes acquisition and I/O",
+  "missing_channel_policy": "median imputation through 8; DATA_FAULT above the limit",
+  "replay_mode": "accelerated replay of independently published three-second epochs",
+  "subjects": 11
+}

@@ -1,0 +1,6 @@
+artifact_thresholds_uv: [null, 1000.0, 500.0, 200.0]
+bootstrap_resamples: 10000
+inner_splits: 5
+calibration_trees: 200
+logistic_c_values: [0.01, 0.1, 1.0, 10.0, 100.0]
+random_seed: 2026

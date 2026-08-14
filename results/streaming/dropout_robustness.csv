@@ -1,0 +1,6 @@
+missing_channels,status,imputation,balanced_accuracy,roc_auc,mean_probability_shift
+0,evaluated,no dropout,0.6852953276036904,0.7670509818904848,0.0
+1,evaluated,median across available channels,0.6838626780860512,0.7676377868684031,0.02756409001722683
+4,evaluated,median across available channels,0.6832151123211774,0.7608767559660724,0.039875814988272806
+8,evaluated,median across available channels,0.6709259312396917,0.7552287143269987,0.05461809117659469
+16,data_fault,not attempted,,,

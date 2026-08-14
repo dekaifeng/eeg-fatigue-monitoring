@@ -1,0 +1,10 @@
+enter_probability: 0.65
+exit_probability: 0.35
+enter_windows: 3
+exit_windows: 2
+max_missing_channels: 8
+dropout_scenarios: [0, 1, 4, 8, 16]
+benchmark_subject: 1
+benchmark_windows: 150
+gif_frames: 60
+random_seed: 2026

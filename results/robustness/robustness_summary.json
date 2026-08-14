@@ -1,0 +1,46 @@
+{
+  "calibration": {
+    "platt_oof": {
+      "brier": 0.20922510950816903,
+      "ece": 0.14445766107804905,
+      "log_loss": 0.6082326286398404
+    },
+    "raw": {
+      "brier": 0.210206409153753,
+      "ece": 0.15707957321710736,
+      "log_loss": 0.6150459122697316
+    }
+  },
+  "data_source": "Figshare DOI 10.6084/m9.figshare.14273687.v3",
+  "epochs": 2022,
+  "feature_ablation_conditions": 4,
+  "nested_logistic": {
+    "balanced_accuracy_mean": 0.6188113800474568,
+    "balanced_accuracy_std": 0.089954684033173,
+    "selected_c_counts": {
+      "0.01": 2,
+      "0.1": 1,
+      "1.0": 5,
+      "10.0": 1,
+      "100.0": 2
+    }
+  },
+  "subject_statistics": [
+    {
+      "balanced_accuracy_mean": 0.6348061292387149,
+      "bootstrap_95_lower": 0.5779709328709194,
+      "bootstrap_95_upper": 0.6929787084485842,
+      "exact_sign_flip_p_vs_0p5": 0.001953125,
+      "model": "logistic_regression"
+    },
+    {
+      "balanced_accuracy_mean": 0.6852953276036904,
+      "bootstrap_95_lower": 0.6294159642822258,
+      "bootstrap_95_upper": 0.7464726596044025,
+      "exact_sign_flip_p_vs_0p5": 0.0009765625,
+      "model": "random_forest"
+    }
+  ],
+  "subjects": 11,
+  "threshold_conditions": 4
+}

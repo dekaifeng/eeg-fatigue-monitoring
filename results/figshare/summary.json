@@ -1,0 +1,47 @@
+{
+  "best_observed_model": "random_forest",
+  "class_counts_generated": {
+    "0": 1011,
+    "1": 1011
+  },
+  "class_counts_retained": {
+    "0": 1011,
+    "1": 1011
+  },
+  "data_source": "Figshare EEG driver drowsiness dataset v3, DOI 10.6084/m9.figshare.14273687.v3",
+  "epochs_generated": 2022,
+  "epochs_rejected": 0,
+  "epochs_retained": 2022,
+  "evaluation": "leave_one_subject_out",
+  "models": {
+    "dummy_prior": {
+      "balanced_accuracy_mean": 0.5,
+      "balanced_accuracy_std": 0.0,
+      "f1_mean": 0.0,
+      "f1_std": 0.0,
+      "roc_auc_mean": 0.5,
+      "roc_auc_std": 0.0
+    },
+    "logistic_regression": {
+      "balanced_accuracy_mean": 0.6348061292387149,
+      "balanced_accuracy_std": 0.09886684525315836,
+      "f1_mean": 0.6191032845651211,
+      "f1_std": 0.1419404345187896,
+      "roc_auc_mean": 0.6885713330121757,
+      "roc_auc_std": 0.10862381107045839
+    },
+    "random_forest": {
+      "balanced_accuracy_mean": 0.6852953276036904,
+      "balanced_accuracy_std": 0.09883168839742168,
+      "f1_mean": 0.6852234482269279,
+      "f1_std": 0.11850226102730967,
+      "roc_auc_mean": 0.7670509818904848,
+      "roc_auc_std": 0.10337638059772217
+    }
+  },
+  "n_splits": 11,
+  "n_subjects": 11,
+  "primary_balanced_accuracy": 0.6348061292387149,
+  "primary_model": "logistic_regression",
+  "rejection_rate": 0.0
+}

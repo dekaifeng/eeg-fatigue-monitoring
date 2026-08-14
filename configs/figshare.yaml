@@ -1,0 +1,11 @@
+preprocessing:
+  low_cut_hz: 1.0
+  high_cut_hz: 40.0
+  peak_to_peak_threshold_uv: 500.0
+  apply_filter: false
+  reject_peak_to_peak: false
+
+evaluation:
+  n_splits: 5
+  random_seed: 2026
+  strategy: leave_one_subject_out
