@@ -4,19 +4,22 @@
 
 | Milestone | Date | Scope |
 |---|---|---|
-| Original research-program context | Jun–Jul 2022 | UMindFatigue EEG fatigue-detection project, including research, modeling support, equipment selection, data collection, and presentation. |
-| Independent public-data ML reconstruction and release | Aug 2026 | Built this reproducible software pipeline with synthetic and CC BY 4.0 public EEG data; it is not the original project code or dataset. |
+| Research-program experience | Jun–Jul 2022 | In UMindFatigue, I contributed research, modeling support, equipment selection, data collection, and project presentation. |
+| Public implementation and extension | Aug 2026 | I independently built this reproducible pipeline with synthetic and CC BY 4.0 public EEG data. |
 
-These dates distinguish the original research experience from the later public portfolio build; the GitHub repository date refers only to the independent reconstruction.
+The repository builds on my UMindFatigue experience while keeping the public implementation independent: it does not contain the original program code, participant data, documents, or other non-public material.
 
 A reproducible research prototype for EEG preprocessing, spectral feature engineering,
 leakage-resistant fatigue-state classification, and accelerated epoch replay. Phase 1 validates
 the software on deterministic synthetic EEG. Phases 2-4 use a CC BY 4.0 public
 driving-simulator dataset without redistributing it.
 
-> **Research software only.** This repository is not a medical device, diagnostic system, driver
-> monitor, or safety-critical product. Synthetic benchmark scores are not evidence of clinical or
-> real-world accuracy.
+> **My contribution and validation boundary:** I implemented the preprocessing,
+> feature engineering, leakage-resistant subject-grouped evaluation, baseline
+> comparisons, public-dataset experiments, epoch replay, tests, and result
+> artifacts in this public version. Metrics characterize this research pipeline,
+> not clinical diagnosis, real-world driver monitoring, or safety-critical
+> deployment.
 
 ![Accelerated EEG epoch replay](results/streaming/epoch_replay_demo.gif)
 
