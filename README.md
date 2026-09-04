@@ -1,5 +1,14 @@
 # EEG Fatigue Monitoring
 
+## Project timeline and provenance
+
+| Milestone | Date | Scope |
+|---|---|---|
+| Original research-program context | Jun–Jul 2022 | UMindFatigue EEG fatigue-detection project, including research, modeling support, equipment selection, data collection, and presentation. |
+| Independent public-data ML reconstruction and release | Aug 2026 | Built this reproducible software pipeline with synthetic and CC BY 4.0 public EEG data; it is not the original project code or dataset. |
+
+These dates distinguish the original research experience from the later public portfolio build; the GitHub repository date refers only to the independent reconstruction.
+
 A reproducible research prototype for EEG preprocessing, spectral feature engineering,
 leakage-resistant fatigue-state classification, and accelerated epoch replay. Phase 1 validates
 the software on deterministic synthetic EEG. Phases 2-4 use a CC BY 4.0 public
