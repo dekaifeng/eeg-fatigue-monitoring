@@ -1,5 +1,9 @@
 # EEG Fatigue Monitoring
 
+Subject-held-out EEG classification with public-data baselines and explicit
+uncertainty. [Quick start](#quick-start) · [results](#phase-2-results) ·
+[public-data reproduction](docs/reproduction.md).
+
 ## Project timeline and provenance
 
 | Milestone | Date | Scope |
@@ -142,8 +146,8 @@ The raw Figshare MATLAB file is always excluded.
   cross-fitted probability calibration, and nested subject-grouped tuning.
 - **Phase 4:** complete - accelerated epoch replay, alarm hysteresis, explicit data-fault handling,
   missing-channel sensitivity, workstation latency measurements, and an animated demo.
-- **Release candidate:** audited representative evidence and local Git history; GitHub publication
-  requires explicit authorization.
+- **Public repository:** representative evidence is versioned; full per-epoch
+  outputs can be reproduced and downloaded from the public-data workflow.
 
 See [methodology](docs/methodology.md) and [limitations](docs/limitations.md) for details.
 
