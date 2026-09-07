@@ -4,6 +4,12 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
+env:
+  MPLBACKEND: Agg
+
 jobs:
   test:
     runs-on: ubuntu-22.04
@@ -18,3 +24,17 @@ jobs:
           cache: pip
       - run: python -m pip install -e '.[dev]'
       - run: bash scripts/verify.sh
+      - name: Retain run environment
+        if: always()
+        run: |
+          mkdir -p ci-evidence
+          python --version > ci-evidence/python.txt
+          python -m pip freeze > ci-evidence/requirements.txt
+          git rev-parse HEAD > ci-evidence/git-sha.txt
+          uname -a > ci-evidence/host.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: environment-test-${{ matrix.python-version }}
+          path: ci-evidence/
+          retention-days: 14
